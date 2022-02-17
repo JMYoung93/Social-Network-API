@@ -9,8 +9,8 @@ A REST API for a social media app. Built with Express, Mongoose, and MongoDB.
 ## Usage
 1. Install MongoDB on your machine (if you don't, follow the instructions on the [MongoDB Website](https://docs.mongodb.com/manual/installation/))
 2. Clone the repo
-3. Install dependencies with `npm -i`
-4. Run `npm start` to run the server and make the API live
+3. Install dependencies using `npm -i`
+4. Run `npm start` to run the server
 5. Use your browser or an app like [Insomnia](https://insomnia.rest/) to test the REST API.
 
 ## Models
@@ -19,15 +19,6 @@ A REST API for a social media app. Built with Express, Mongoose, and MongoDB.
 - Reaction (subdocument in Thought)
 
 ## Endpoints
-**User**
-- Get all users:        `GET /api/users`
-- Create a user:        `POST /api/users`
-- Get user by ID:       `GET /api/users/:id`
-- Update a user:        `PUT /api/users/:id`
-- Delete a user:        `DELETE /api/users/:id`
-- Add a friend:         `PUT /api/users/:userId/friends/:friendId`
-- Delete a friend:      `DELETE /api/users/:userId/friends/:friendId`
-
 **Thought**
 - Get all thoughts:     `GET /api/thoughts`
 - Create a thought:     `POST /api/thoughts`
@@ -39,7 +30,15 @@ A REST API for a social media app. Built with Express, Mongoose, and MongoDB.
 - Add a reaction:       `PUT /api/thoughts/:id/reactions`
 - Delete a reaction:    `DELETE /api/thoughts/:id/reactions`
 
+**User**
+- Get all users:        `GET /api/users`
+- Create a user:        `POST /api/users`
+- Get user by ID:       `GET /api/users/:id`
+- Update a user:        `PUT /api/users/:id`
+- Delete a user:        `DELETE /api/users/:id`
+- Add a friend:         `PUT /api/users/:userId/friends/:friendId`
+- Delete a friend:      `DELETE /api/users/:userId/friends/:friendId`
+
 ## Packages
 - express
-- moment
 - mongoose
